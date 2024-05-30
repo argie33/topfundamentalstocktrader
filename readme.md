@@ -30,7 +30,7 @@ Constructs and updates data tables essential for the analysis, including histori
 ### `stocklistload.py`
 Responsible for loading and updating the list of stocks under consideration, ensuring the system has the most current data for screening and analysis.
 
-### `stockscreener.py` (Critical Component)
+### `stockscreener.py`
 This script is crucial for identifying top-performing stocks. It applies complex algorithms to screen stocks based on comprehensive financial and technical criteria. The screener evaluates data from multiple sources to assign scores to each stock, highlighting those with the best growth potential and financial stability. It integrates outputs from other scripts like `balancesheet.py` and `incomestatement.py` to generate these scores. The top-scoring stocks are then passed to the trading module (`trade.py`) for action.
 
 ### `stocksfinancialgrowth.py`
@@ -42,7 +42,7 @@ Calculates a variety of financial ratios critical in the financial analysis, suc
 ### `technicaldata.py`
 Manages and analyzes technical trading indicators, like moving averages, RSI, and MACD, aiding in the identification of technical patterns that may signal buy or sell opportunities.
 
-### `trade.py` (Critical Component)
+### `trade.py`
 This script is responsible for the execution of trades. It uses the information provided by `stockscreener.py` about top-scoring stocks to execute trades. It manages both buy and sell orders based on real-time market conditions and predefined trading strategies. This script ensures that trading decisions are optimized for maximum return on investment, executing orders through the Alpaca API, with robust error handling and transaction logging for traceability.
 
 ## Running the Application
