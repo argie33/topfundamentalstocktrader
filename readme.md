@@ -1,7 +1,7 @@
 # Stock Analysis and Trading System
 
 ## Overview
-This stock analysis and trading system is designed specifically for quantitative analysts and algorithmic traders, integrating deep financial analysis with automated trading capabilities. It uses sophisticated algorithms to identify high-potential stocks based on a scoring system that evaluates financial health, growth prospects, and technical indicators, enabling active portfolio management by making informed trading decisions in real-time.
+This stock analysis and trading system is designed to generate rankings for the best stocks based on input data from a company's quarterly financial statements. It uses sophisticated algorithms to identify high-potential stocks based on a scoring system that evaluates financial health, growth prospects, and technical indicators, enabling active portfolio management by making informed trading decisions in real-time.  The project is also equipped to hold the top ranked stocks in a brokerage account.  
 
 ## Components
 The project comprises several Python scripts, each serving specific functions:
@@ -54,6 +54,7 @@ To operate the system:
 - Python 3.8 or later
 - Libraries: `pandas`, `numpy`, `sqlalchemy`, `requests`, `alpaca-trade-api`
 - Alpaca API key for trading
+- Financialmodelingprep API key for data feed
 - MySQL database setup with necessary data structures
 
 ## Setup
